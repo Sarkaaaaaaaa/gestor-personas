@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración - Clínica Salud</title>
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="adm.css">
+</head>
+<body>
+
+    <header>
+        <h1>Administración - Clínica Salud</h1>
+        <i class="fas fa-user-md admin-icon"></i> <!-- Icono de administrador -->
+    </header>
+    
+    <nav>
+        <a href="#">Gestionar Citas</a>
+        <a href="#">Gestión de Usuarios</a>
+        <a href="#">Reportes</a>
+    </nav>
+    
+    <section class="admin-info">
+        <h2>Actualizaciones Administrativas</h2>
+        <img src="https://storage.googleapis.com/www-saludiario-com/wp-content/uploads/2016/03/Autogestion-Medico-Emprendedor.jpg" alt="Actualizaciones Administrativas" />
+        <p><b>Optimiza tus tareas: Asegúrate de revisar las nuevas funcionalidades en el sistema que mejorarán la gestión de citas y usuarios.</b></p>
+        <p>Esté atento a las novedades sobre protocolos de salud y actualizaciones en la atención médica que afectan directamente la calidad de servicio.</p>
+    </section>
+    
+    <div class="main-content">
+        <div class="box">
+            <h3>Gestionar Citas</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/5226/5226011.png" alt="Gestionar Citas" class="box-icon"/>
+            <p>Visualiza, edita o cancela citas médicas.</p>
+        </div>
+        <div class="box">
+            <h3>Gestión de Usuarios</h3>
+            <img src="https://e84bh8b3dtf.exactdn.com/wp-content/uploads/2020/08/User-Management-e1598275803473.png?strip=all&lossy=1&w=1920&ssl=1" alt="Gestión de Usuarios" class="box-icon"/>
+            <p>Agrega, edita o elimina usuarios en el sistema.</p>
+        </div>
+        <div class="box">
+            <h3>Reportes</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/5674/5674015.png" alt="Reportes" class="box-icon"/>
+            <p>Genera reportes sobre la actividad de la clínica.</p>
+        </div>
+    </div>
+    
+    <style>
+        /* Código CSS existente... */
+    
+        .box-icon {
+            max-width: 80px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin: 1 px 0; /* Espaciado alrededor de la imagen */
+        }
+    </style>
+    
+    <section class="reviews">
+        <h2>Comentarios y calificación del servicio</h2>
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <h4>"Excelente atención médica"</h4>
+            <p>- Juan Pérez, 10/09/2024</p>
+        </div>
+        <div class="review-card">
+            <p>⭐⭐⭐⭐</p>
+            <h4>"Servicio de calidad, aunque algo de espera"</h4>
+            <p>- María Sánchez, 05/09/2024</p>
+        </div>
+        <div class="review-card">
+            <p>⭐⭐⭐⭐⭐</p>
+            <h4>"Muy buen trato y atención personalizada"</h4>
+            <p>- Pedro Gómez, 15/09/2024</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Contacto</h3>
+                <p>Email: contacto@clinicasalud.com</p>
+                <p>Teléfono: 01 555 1234</p>
+                <p>Celular: +57 321 456 7890</p>
+            </div>
+            <div>
+                <h3>Otras Funciones</h3>
+                <a href="#">Blog |</a>
+                <a href="#"> Biblioteca de recursos |</a>
+                <a href="#"> Soporte en línea</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botón de Chat -->
+    <button class="chat-button">
+        <i class="fas fa-comments"></i> Chat
+    </button>
+    
+    <!-- Chat Box -->
+    <div class="chat-container">
+        <div class="chat-header" id="chat-header">
+            Chat con: Seleccione un paciente
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- Aquí se mostrarán los mensajes del chat -->
+        </div>
+        <div class="chat-footer">
+            <textarea rows="3" placeholder="Escribe un mensaje..."></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+    
+    <!-- Lista de Pacientes Confirmados -->
+    <div class="confirmed-patients">
+        <div class="patients-header">
+            Pacientes Confirmados
+        </div>
+        <div class="patients-body" id="patients-list">
+            <!-- Lista de pacientes -->
+            <div class="patient" data-name="Juan Pérez" data-date="10/09/2024">Juan Pérez - 10/09/2024</div>
+            <div class="patient" data-name="María Sánchez" data-date="05/09/2024">María Sánchez - 05/09/2024</div>
+            <div class="patient" data-name="Pedro Gómez" data-date="15/09/2024">Pedro Gómez - 15/09/2024</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+<script src="adm.js"></script>
+</body>
+</html>
